@@ -10,7 +10,7 @@ The strategy first syncs its initial state, by rebuilding the state of all Sudos
 
 1. Starting from the Sudoswap factory deployment block, filter for all `NewPair` events emitted to build a full list of pools.
 2. We batch read quotes for all pools by using a specialized quoter contract  via eth_call bytecode injection.
-3. We update the state of a pair of HashMaps in memory for fast retrival of each NFT collection's best quote. 
+3. We update the state of a pair of HashMaps in memory for fast retrieval of each NFT collection's best quote. 
 
 ### Processing
 
